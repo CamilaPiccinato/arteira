@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Arteira: Comunidade</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <h1 class="h1Titulo">Arteira</h1>
+    </a>
+    <div class="barradepesquisa">
+    <img src="imagens/lupa.png" alt="Lupa de pesquisa">
+    <input id="input" type="procurar" placeholder="O que você está procurando?">
+    </div>
+    <button class="sacoladecompras" id="btnCarrinho">
+    <img src="imagens/sacoladecompras.png" alt="Sacola de compras">
+    <span class="badge">1</span>
+</button>
+    <div class="botoes">
+      <button class="usuario">
+      <img src="imagens/usuario.png" alt="Usuário">
+      </button>
+      <div class="textoLogin">
+        <button class="Entrar">Entre</button> <span>ou</span>
+        <button class="Registrar">Cadastre-se</button>
+      </div>
+    </div>
+  </header>
+  <nav aria-label="Menu Principal">
+      <ul class="menu">
+        <li><a href="#">Categorias</a></li>
+        <li><a href="comunidade.html">Comunidade</a></li>
+        <li><a href="#">Frete</a></li>
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Denunciar</a></li>
+        <li><a href="#">Cupons</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ofertas</a></li>
+      </ul>
+    </nav>
+    <main>
+  <section aria-label="Postagens da Comunidade">
+    <div class="addComunidadeContainer">
+      <button class="addComunidade" id="btnAddComunidade">
+        <img src="imagens/botaomais.png" alt="Botão de adicionar postagens">
+      </button>
+    </div>
+
+    <div class="gridComunidade">
+
+      <a href="#" class="postComunidade">
+        <img src="imagens/ecobagdavibrito.png" alt="Postagem 1">
+        <div class="infopost">
+          <img src="imagens/davibrito.png" alt="DavicrochesS2">
+          <div class="textopost">
+            <span>DavicrochesS2</span>
+            <p>Duas ecobags de crochê</p>
+          </div>
+          <button class="curtir" id="curtir1">
+            <img src="imagens/curtida.png" alt="Curtir">
+          </button>
+        </div>
+      </a>
+
+      <a href="#" class="postComunidade">
+        <img src="imagens/VASO.png" alt="Postagem 2">
+        <div class="infopost">
+          <img src="imagens/image (1).png" alt="HobbiesDaFer">
+          <div class="textopost">
+            <span>HobbiesDaFer</span>
+            <p>Decompagem em jarra</p>
+          </div>
+          <button class="curtir" id="curtir2">
+            <img src="imagens/curtida.png" alt="Curtir">
+          </button>
+        </div>
+      </a>
+
+      <a href="#" class="postComunidade">
+        <img src="imagens/FOLHA.png" alt="Postagem 3">
+        <div class="infopost">
+          <img src="imagens/image (2).png" alt="ArtesanatoporAmor">
+          <div class="textopost">
+            <span>ArtesanatoporAmor</span>
+            <p>Porta joia em cerâmica fria</p>
+          </div>
+          <button class="curtir" id="curtir3">
+            <img src="imagens/curtida.png" alt="Curtir">
+          </button>
+        </div>
+      </a>
+
+      <a href="#" class="postComunidade">
+        <img src="imagens/gatopintura.png" alt="Postagem 4">
+        <div class="infopost">
+          <img src="imagens/image (3).png" alt="SolAmareloPinturas">
+          <div class="textopost">
+            <span>SolAmareloPinturas</span>
+            <p>Pintura de pets em aquarela</p>
+          </div>
+          <button class="curtir" id="curtir4">
+            <img src="imagens/curtida.png" alt="Curtir">
+          </button>
+        </div>
+      </a>
+
+      <a href="#" class="postComunidade">
+        <img src="imagens/ABELHA.png" alt="Postagem 5">
+        <div class="infopost">
+          <img src="imagens/image (4).png" alt="LinhasDaVida">
+          <div class="textopost">
+            <span>LinhasDaVida</span>
+            <p>Quadro bordado</p>
+          </div>
+          <button class="curtir" id="curtir5">
+            <img src="imagens/curtida.png" alt="Curtir">
+          </button>
+        </div>
+      </a>
+
+      <a href="#" class="postComunidade">
+        <img src="imagens/camagato.png" alt="Postagem 6">
+        <div class="infopost">
+          <img src="imagens/image.png" alt="ILoveCats">
+          <div class="textopost">
+            <span>ILoveCats</span>
+            <p>Caminha para pets</p>
+          </div>
+          <button class="curtir" id="curtir6">
+            <img src="imagens/curtida.png" alt="Curtir">
+          </button>
+        </div>
+      </a>
+
+    </div>
+  </section>
+</main>
+</body>
+</html>

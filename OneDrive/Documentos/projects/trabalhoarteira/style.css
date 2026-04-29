@@ -10,8 +10,12 @@
   font-family: 'Oleo Script Swash Caps', system-ui;
   padding: 20px;
   margin-left: 10px;
+  font-weight: lighter;
 }
 
+header a {
+  text-decoration: none;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -206,3 +210,93 @@ header {
 .miçangas:hover .overlay {
   bottom: 0; 
 } 
+
+.addComunidadeContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.addComunidade {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.addComunidade img {
+  width: 50px;
+  height: 48px;
+}
+
+.gridComunidade {
+  columns: 3;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.postComunidade {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.postComunidade > img {
+  width: 100%;
+  display: block;
+}
+
+.infopost {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+}
+
+.infopost > img {
+  width: 35px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.textopost {
+  margin-top: -5px;
+  flex: 1;
+}
+
+.textopost span {
+  font-family: 'Poppins', system-ui;
+  font-size: 10px;
+  color: #000000;
+  display: block;
+}
+
+.textopost p {
+  font-family: 'Poppins', system-ui;
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.curtir {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.curtir img {
+  width: 34px;
+  height: 34px;
+}
+
+.curtir:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
