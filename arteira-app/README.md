@@ -10,11 +10,8 @@ Este repositório corresponde à **Etapa 2** do trabalho avaliativo: a migraçã
 
 | Integrante | Atividades desenvolvidas |
 |------------|--------------------------|
-| _(preencher)_ | Interface e layout (Header, Nav, páginas) |
-| _(preencher)_ | Lógica do CRUD de postagens |
-| _(preencher)_ | Organização da documentação e evidências |
-
-> Ajuste a tabela conforme os integrantes reais do grupo.
+| Camila Piccinato | Estrutura inicial do site (HTML/CSS), tela inicial e página da comunidade |
+| Luan Guex | Migração do site para React, CRUD de postagens, login de usuário, controle de dono e upload de foto |
 
 ---
 
@@ -117,7 +114,3 @@ Para gerar a versão de produção:
 npm run build
 npm run preview
 ```
-
-## Vídeo de demonstração
-
-_(inserir o link do vídeo aqui, quando houver)_
