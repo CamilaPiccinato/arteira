@@ -1,0 +1,524 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* ===== Header ===== */
+.h1Titulo {
+  font-size: 46.9px;
+  color: #0C7B2F;
+  font-family: 'Oleo Script Swash Caps', system-ui;
+  padding: 20px;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.barradepesquisa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', system-ui;
+  font-size: 17px;
+  color: #88888C;
+  background-color: #FAFAFA;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  padding: 8px 14px;
+  width: 727px;
+  height: 35px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.barradepesquisa input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-family: 'Poppins', system-ui;
+}
+
+.barradepesquisa img {
+  width: 20px;
+  height: 18px;
+}
+
+.sacoladecompras {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.sacoladecompras img {
+  width: 58px;
+  height: 56px;
+}
+
+.badge {
+  position: absolute;
+  top: 46px;
+  left: 8px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+}
+
+.usuario {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.usuario img {
+  width: 48px;
+  height: 55px;
+}
+
+.textoLogin {
+  font-family: 'Poppins', system-ui;
+  font-size: 17px;
+  color: #0C7B2F;
+  margin-left: 8px;
+}
+
+.Entrar, .Registrar {
+  border: none;
+  background: none;
+  font-family: 'Poppins', system-ui;
+  font-size: 17px;
+  color: #0C7B2F;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Entrar:hover, .Registrar:hover {
+  text-decoration: underline;
+}
+
+/* ===== Nav ===== */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #36af5c;
+  padding: 2px 0;
+  border: #0C7B2F 3px solid;
+  list-style: none;
+}
+
+.menu li::before {
+  content: "|";
+  color: white;
+  font-weight: bold;
+  font-family: 'Poppins', system-ui;
+  margin-right: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', system-ui;
+  font-size: 17px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Home: comunidade banner + categorias ===== */
+.comunidade img {
+  width: 100%;
+  height: 430px;
+  overflow: hidden;
+}
+
+.comunidade {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.categorias {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.croche, .pintura, .macrame, .micangas {
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  flex: 1;
+}
+
+.croche img, .pintura img, .macrame img, .micangas img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: white;
+  font-family: 'Poppins', system-ui;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+  transition: bottom 0.3s ease;
+}
+
+.croche:hover .overlay,
+.pintura:hover .overlay,
+.macrame:hover .overlay,
+.micangas:hover .overlay {
+  bottom: 0;
+}
+
+/* ===== Comunidade: feed de posts ===== */
+.addComunidadeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 50px;
+}
+
+.addComunidade {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.addComunidade img {
+  width: 50px;
+  height: 48px;
+}
+
+.addComunidadeLabel {
+  font-family: 'Poppins', system-ui;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0C7B2F;
+}
+
+.gridComunidade {
+  columns: 3;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.postComunidade {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.postComunidade > img.postImg {
+  width: 100%;
+  display: block;
+}
+
+.infopost {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+}
+
+.infopost > img.avatar {
+  width: 35px;
+  height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.textopost {
+  margin-top: -5px;
+  flex: 1;
+}
+
+.textopost span {
+  font-family: 'Poppins', system-ui;
+  font-size: 10px;
+  color: #000000;
+  display: block;
+}
+
+.textopost p {
+  font-family: 'Poppins', system-ui;
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.curtir {
+  border: none;
+  background: none;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Poppins', system-ui;
+  font-size: 12px;
+  color: #555;
+}
+
+.curtir img {
+  width: 34px;
+  height: 34px;
+  transition: transform 0.2s ease;
+}
+
+.curtir:hover img {
+  transform: scale(1.1);
+}
+
+.curtir:not(.ativo) img {
+  filter: grayscale(100%) opacity(0.55);
+}
+
+/* Ações de editar/excluir no card */
+.postAcoes {
+  display: flex;
+  gap: 8px;
+  padding: 0 8px 10px;
+}
+
+.postAcoes button {
+  flex: 1;
+  border: 1px solid #E0E0E0;
+  background: #FAFAFA;
+  border-radius: 6px;
+  padding: 6px 0;
+  cursor: pointer;
+  font-family: 'Poppins', system-ui;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.postAcoes .btnEditar {
+  color: #0C7B2F;
+}
+
+.postAcoes .btnEditar:hover {
+  background: #e8f6ec;
+}
+
+.postAcoes .btnExcluir {
+  color: #c0392b;
+}
+
+.postAcoes .btnExcluir:hover {
+  background: #fbeae8;
+}
+
+.feedVazio {
+  text-align: center;
+  color: #88888C;
+  font-family: 'Poppins', system-ui;
+  padding: 40px 20px;
+  font-size: 16px;
+}
+
+/* ===== Modal (formulário / confirmação) ===== */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 460px;
+  padding: 26px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  font-family: 'Poppins', system-ui;
+}
+
+.modal h2 {
+  color: #0C7B2F;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.modal label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  margin-top: 14px;
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: 'Poppins', system-ui;
+  font-size: 14px;
+  outline: none;
+}
+
+.modal input:focus,
+.modal textarea:focus,
+.modal select:focus {
+  border-color: #36af5c;
+}
+
+.modal textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.erroCampo {
+  color: #c0392b;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.modalAcoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.btnPrimario, .btnSecundario {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 0;
+  cursor: pointer;
+  font-family: 'Poppins', system-ui;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btnPrimario {
+  background: #36af5c;
+  color: #fff;
+}
+
+.btnPrimario:hover {
+  background: #0C7B2F;
+}
+
+.btnSecundario {
+  background: #eee;
+  color: #333;
+}
+
+.btnSecundario:hover {
+  background: #ddd;
+}
+
+.modalTextoConfirma {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.previewImagem {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.previewImagem img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  border: 1px solid #E0E0E0;
+}
+
+.previewAvatar {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.previewAvatar img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #36af5c;
+}
+
+.textoLogin strong {
+  font-weight: 700;
+}
